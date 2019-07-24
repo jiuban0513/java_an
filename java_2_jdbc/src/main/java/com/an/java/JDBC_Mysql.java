@@ -47,6 +47,8 @@ public class JDBC_Mysql {
                     ResultSet resultSet1 = preparedStatement3.executeQuery();
                 //3.3connection.prepareCall("");//执行数据库存储过程
                 CallableStatement callableStatement = connection.prepareCall("call procedure('insert/delete/update/select')");
+                callableStatement.execute();
+                ResultSet resultSet2 = callableStatement.getResultSet();
             //4.关闭资源
             resultSet.close();
             resultSet1.close();
