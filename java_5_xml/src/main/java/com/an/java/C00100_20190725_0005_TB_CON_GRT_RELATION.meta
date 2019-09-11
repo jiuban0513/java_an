@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="GBK"?>
+
+<config dbname="orcl" schema="loan">
+	<meta-def name="TB_CON_GRT_RELATION"><!--此为第一层-->
+		<field name="CON_RELATION_ID1" type="VARCHAR1" length="1"/><!--此为第二层-->
+		<field name="CON_RELATION_ID2" type="VARCHAR2" length="2"/>
+		<field name="CON_RELATION_ID3" type="VARCHAR3" length="4" nullable="1"/>
+		<field name="CON_RELATION_ID4" type="VARCHAR4" length="8" nullable="1"/>
+		<field name="CON_RELATION_ID5" description="" type="VARCHAR5" length="16" nullable="1"/>
+		<field name="CON_RELATION_ID6" description="" type="VARCHAR6" length="32" nullable="1"/>
+	</meta-def>
+</config>
