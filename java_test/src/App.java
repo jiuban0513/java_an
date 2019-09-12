@@ -1,6 +1,3 @@
-package com.an.java;
-
-
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
