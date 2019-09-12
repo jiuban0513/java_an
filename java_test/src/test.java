@@ -1,5 +1,3 @@
-package com.an.java;
-
 import java.io.*;
 import java.sql.*;
 import java.util.ArrayList;
