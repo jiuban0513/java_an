@@ -11,10 +11,12 @@ public class JDBC_Mysql {
             //1.加载驱动
             //Mysql: com.mysql.jdbc.Driver
             //Oracle: oracle.jdbc.driver.OracleDirver
+            //Hive: org.apache.hive.jdbc.HiveDirver
             Class.forName("com.mysql.jdbc.Driver");
             //2.获取数据库连接
             //Mysql-url: jdbc:mysql://127.0.0.1:3306/数据库名
             //Oracle-url: jdbc:oracle:thin:@//127.0.0.1:1521/orcl
+            //Hive: jdbc:hive2://127.0.0.1:21050/数据库名;auth=noSasl
             String url = "jdbc:mysql://127.0.0.1:3306/test?characterEncoding=utf-8";
             Connection connection = DriverManager.getConnection(url, "root", "password");
             connection.setAutoCommit(true);//true-自动提交  false-手动提交
